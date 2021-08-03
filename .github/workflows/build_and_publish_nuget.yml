@@ -22,4 +22,4 @@ jobs:
     - name: Build
       run: msbuild src/JavaGl.Obj/JavaGl.Obj.csproj /property:Configuration=Release /warnaserror
     - name: Publish JavaGl.Obj
-      run: nuget push src/Java/bin/Release/JavaGl.Obj.nupkg -Source https://api.nuget.org/v3/index.json
+      run: nuget push src/JavaGl.Obj/bin/Release/JavaGl.Obj.nupkg -Source https://api.nuget.org/v3/index.json
