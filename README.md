@@ -1,5 +1,5 @@
 # JavaGl.Obj
-[![Build](https://github.com/Saratsin/JavaGl.Obj/actions/workflows/build_and_nuget_publish.yml/badge.svg)](https://github.com/Saratsin/JavaGl.Obj/actions/workflows/build_and_nuget_publish.yml) 
+[![Build](https://github.com/Saratsin/JavaGl.Obj/actions/workflows/build_and_publish_nuget.yml/badge.svg)](https://github.com/Saratsin/JavaGl.Obj/actions/workflows/build_and_publish_nuget.yml) 
 [![Nuget](https://img.shields.io/nuget/v/JavaGl.Obj)](https://www.nuget.org/packages/JavaGl.Obj)
 
 Xamarin.Android bindings library for the [de.javagl:obj](https://github.com/javagl/Obj) library.  
