@@ -21,5 +21,7 @@ jobs:
       run: nuget restore src/JavaGl.Obj.sln
     - name: Build
       run: msbuild src/JavaGl.Obj/JavaGl.Obj.csproj /property:Configuration=Release /warnaserror
+    - name: Show files
+      run: ls src/JavaGl.Obj/bin/Release
     - name: Publish JavaGl.Obj
       run: nuget push src/JavaGl.Obj/bin/Release/JavaGl.Obj.*.nupkg -Source https://api.nuget.org/v3/index.json
