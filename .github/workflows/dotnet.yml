@@ -1,0 +1,25 @@
+name: Publish package
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+    - name: Publish JavaGl.Obj
+      uses: brandedoutcast/public-nuget@v2.5.5
+      with:
+          PROJECT_FILE_PATH: src/JavaGl.Obj/JavaGl.Obj.csproj
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
