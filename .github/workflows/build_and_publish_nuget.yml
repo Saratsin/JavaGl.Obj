@@ -10,11 +10,11 @@ jobs:
 
     steps:
     - name: Git Checkout
-    - uses: actions/checkout@v2
+      uses: actions/checkout@v2
     - name: MSBuild Setup
-    - uses: microsoft/setup-msbuild@v1.0.2
+      uses: microsoft/setup-msbuild@v1.0.2
     - name: Nuget Setup
-    - uses: nuget/setup-nuget@v1.0.5
+      uses: nuget/setup-nuget@v1.0.5
       with:
         nuget-api-key: ${{secrets.NUGET_API_KEY}}
     - name: Restore
