@@ -10,18 +10,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 5.0.x
-    - name: Restore dependencies
-      working-directory: src
-      run: dotnet restore
-    - name: Build
-      working-directory: src
-      run: dotnet msbuild --configuration Release --no-restore
     - name: Publish JavaGl.Obj
       uses: brandedoutcast/publish-nuget@v2.5.5
       with:
           PROJECT_FILE_PATH: src/JavaGl.Obj/JavaGl.Obj.csproj
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+          INCLUDE_SYMBOLS: true
