@@ -8,7 +8,7 @@
     <PackageVersion>0.3.0</PackageVersion>
     <Owners>Taras Shevchuk</Owners>
     <Authors>Taras Shevchuk</Authors>
-    <PackageIcon>..\..\icon.png</PackageIcon>
+    <PackageIcon>icon.png</PackageIcon>
     <Summary>JavaGl.Obj bindings library</Summary>
     <Title>JavaGl.Obj</Title>
     <Description>JavaGl.Obj bindings library</Description>
@@ -49,5 +49,6 @@
     <Compile Include="Additions\**\*.cs" />
     <TransformFile Include="Transforms\**\*.xml" />
     <EmbeddedJar Include="Jars\**\*.jar" />
+    <None Include="icon.png" Pack="true" PackagePath="" />
   </ItemGroup>
 </Project>
