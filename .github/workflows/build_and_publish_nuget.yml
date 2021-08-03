@@ -10,10 +10,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Add msbuild to PATH
-      uses: microsoft/setup-msbuild@v1.0.2
+    - uses: microsoft/setup-msbuild@v1.0.2
+    - uses: nuget/setup-nuget@v1
     - name: Restore
-      run: nuget restore
+      run: nuget restore src/JavaGl.Obj.sln
     - name: Build
       run: msbuild src/JavaGl.Obj/JavaGl.Obj.csproj /property:Configuration=Release /warnaserror
     - name: Publish JavaGl.Obj
