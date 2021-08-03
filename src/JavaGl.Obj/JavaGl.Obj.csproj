@@ -6,9 +6,13 @@
     <PackOnBuild>true</PackOnBuild>
     <PackageId>JavaGL.Obj</PackageId>
     <PackageVersion>0.3.0</PackageVersion>
+    <Owners>Taras Shevchuk</Owners>
     <Authors>Taras Shevchuk</Authors>
+    <PackageIconUrl>https://github.com/Saratsin/JavaGl.Obj/blob/main/icon.png</PackageIconUrl>
+    <Summary>JavaGl.Obj bindings library</Summary>
+    <Title>JavaGl.Obj</Title>
     <Description>JavaGl.Obj bindings library</Description>
-    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/Saratsin/JavaGl.Obj</PackageProjectUrl>
     <PackageTags>Obj, JavaGl, Android, Xamarin</PackageTags>
     <IsBindingProject>true</IsBindingProject>
