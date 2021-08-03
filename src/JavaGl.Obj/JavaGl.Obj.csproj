@@ -9,6 +9,8 @@
     <Authors>Taras Shevchuk</Authors>
     <Description>JavaGl.Obj bindings library</Description>
     <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/Saratsin/JavaGl.Obj</PackageProjectUrl>
+    <PackageTags>Obj, JavaGl, Android, Xamarin</PackageTags>
     <IsBindingProject>true</IsBindingProject>
     <EnableDefaultItems>false</EnableDefaultItems>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
