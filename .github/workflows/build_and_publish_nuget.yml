@@ -22,7 +22,7 @@ jobs:
     - name: Build
       run: msbuild src/JavaGl.Obj/JavaGl.Obj.csproj /property:Configuration=Release /warnaserror
     - name: publish nuget package
-      uses: dansiegel/publish-nuget@2
+      uses: dansiegel/publish-nuget@1.01
       with:
         filename: 'src/JavaGl.Obj/bin/Release/JavaGl.Obj.*.nupkg'
         apiKey: ${{ secrets.NUGET_API_KEY }}
