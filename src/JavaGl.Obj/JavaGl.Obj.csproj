@@ -8,7 +8,7 @@
     <PackageVersion>0.3.0</PackageVersion>
     <Owners>Taras Shevchuk</Owners>
     <Authors>Taras Shevchuk</Authors>
-    <PackageIconUrl>https://github.com/Saratsin/JavaGl.Obj/blob/main/icon.png</PackageIconUrl>
+    <PackageIcon>..\..\icon.png</PackageIcon>
     <Summary>JavaGl.Obj bindings library</Summary>
     <Title>JavaGl.Obj</Title>
     <Description>JavaGl.Obj bindings library</Description>
