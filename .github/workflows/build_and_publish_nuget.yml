@@ -19,7 +19,7 @@ jobs:
       run: dotnet restore
     - name: Build
       working-directory: src
-      run: dotnet build --configuration Release --no-restore
+      run: dotnet msbuild --configuration Release --no-restore
     - name: Publish JavaGl.Obj
       uses: brandedoutcast/publish-nuget@v2.5.5
       with:
