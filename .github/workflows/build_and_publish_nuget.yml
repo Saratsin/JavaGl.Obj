@@ -1,8 +1,4 @@
-name: build and publish nuget
-
-on:
-  push:
-    branches: [ main ]
+name: build
 
 jobs:
   build:
