@@ -5,7 +5,7 @@
     <RootNamespace>JavaGl.Obj</RootNamespace>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>JavaGl.Obj</PackageId>
-    <PackageVersion>0.4.0</PackageVersion>
+    <PackageVersion>0.4.0.1</PackageVersion>
     <Owners>Taras Shevchuk</Owners>
     <Authors>Taras Shevchuk</Authors>
     <PackageIcon>icon.png</PackageIcon>
@@ -14,6 +14,7 @@
     <Description>JavaGl.Obj bindings library</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/Saratsin/JavaGl.Obj</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>Obj, JavaGl, Android, Xamarin</PackageTags>
     <IsBindingProject>true</IsBindingProject>
     <EnableDefaultItems>false</EnableDefaultItems>
@@ -49,6 +50,7 @@
     <Compile Include="Additions\**\*.cs" />
     <TransformFile Include="Transforms\**\*.xml" />
     <EmbeddedJar Include="Jars\**\*.jar" />
-    <None Include="icon.png" Pack="true" PackagePath="" />
+    <None Include="icon.png" Pack="true" PackagePath="\" />
+    <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
   </ItemGroup>
 </Project>
