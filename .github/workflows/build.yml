@@ -10,11 +10,11 @@ jobs:
 
     steps:
     - name: Git Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3.5.2
     - name: MSBuild Setup
-      uses: microsoft/setup-msbuild@v1.0.2
+      uses: microsoft/setup-msbuild@v1.3.1
     - name: Nuget Setup
-      uses: nuget/setup-nuget@v1.0.5
+      uses: nuget/setup-nuget@v1.2.0
       with:
         nuget-api-key: ${{secrets.NUGET_API_KEY}}
     - name: Restore
@@ -22,7 +22,7 @@ jobs:
     - name: Build
       run: msbuild src/JavaGl.Obj/JavaGl.Obj.csproj /property:Configuration=Release /warnaserror
     - name: Publish
-      uses: dansiegel/publish-nuget@v1.01
+      uses: dansiegel/publish-nuget@v1.2
       with:
         filename: 'src/JavaGl.Obj/bin/Release/JavaGl.Obj.*.nupkg'
         apiKey: ${{ secrets.NUGET_API_KEY }}
