@@ -1,5 +1,6 @@
 {
-  "msbuild-sdks": {
-    "MSBuild.Sdk.Extras": "3.0.23"
+  "sdk": {
+    "version": "8.0.406",
+    "rollForward": "disable"
   }
 }
