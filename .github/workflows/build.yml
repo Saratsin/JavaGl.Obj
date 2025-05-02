@@ -13,7 +13,10 @@ jobs:
       uses: actions/checkout@v3.5.2
 
     - name: Setup
-      run: dotnet workload install android --version 8.0.406
+      run: |
+        dotnet workload clean
+        dotnet workload install android --version 8.0.406
+        dotnet workload list
     - name: Nuget Setup
       uses: nuget/setup-nuget@v1.2.0
       with:
